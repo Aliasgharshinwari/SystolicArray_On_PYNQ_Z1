@@ -1,4 +1,4 @@
-# Systolic Array on PYNQ-Z1
+# systolic-on-zynq
 
 An FPGA accelerator project for matrix multiplication on the Digilent PYNQ-Z1 board. The design combines a tiled HLS kernel and a PYNQ notebook workflow for running the overlay from Python.
 
