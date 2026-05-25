@@ -8,6 +8,10 @@ The core accelerator is a systolic-array matrix multiply kernel implemented in V
 
 The included HLS testbench checks the hardware result against a software reference implementation and reports basic latency / throughput numbers.
 
+## Screenshot
+
+![Vivado block design](images/vivado_block_design.png)
+
 ## Repository Layout
 
 - `hls_project/` — HLS source, headers, and testbench files.
