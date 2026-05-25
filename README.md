@@ -106,3 +106,17 @@ Generated with `scripts/generate_benchmark_charts.py`.
 - Added placed utilization report: `reports/design_1_wrapper_utilization_placed.rpt` (Vivado 2022.2) — contains device-level placed resource counts (LUTs, FFs, BRAMs, DSPs).
 
 If you run the HLS synthesis (`csynth_design`) successfully on your machine, the generated resource reports (e.g., `*_csynth.rpt`) will appear under `hls_project/solution1/syn/report/` and can be copied into `reports/` for archival.
+
+### Resources Summary (placed)
+
+Device: `xc7z020clg400-1` — report: `reports/design_1_wrapper_utilization_placed.rpt`
+
+| Resource | Used | Available | Util% |
+| --- | ---: | ---: | ---: |
+| Slice LUTs | 44,193 | 53,200 | 83.07% |
+| Slice Registers | 53,148 | 106,400 | 49.95% |
+| Slices | 13,251 | 13,300 | 99.63% |
+| Block RAM Tiles (RAMB36) | 140 | 140 | 100.00% |
+| DSP48E1 | 220 | 220 | 100.00% |
+
+Note: This table summarizes the placed utilization from Vivado 2022.2. For full context and per-module breakdowns, see `reports/design_1_wrapper_utilization_placed.rpt` and `reports/RESOURCES_REPORT.md`.
