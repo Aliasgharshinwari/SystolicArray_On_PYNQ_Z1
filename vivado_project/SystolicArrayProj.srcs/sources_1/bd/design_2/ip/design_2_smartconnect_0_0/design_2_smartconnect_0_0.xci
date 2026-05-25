@@ -1,4 +1,4 @@
-{
+git push -u origin main{
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "design_2_smartconnect_0_0",
