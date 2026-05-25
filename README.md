@@ -87,3 +87,13 @@ Latency is shown in milliseconds, throughput in GOPS, and higher values are bett
 | `512x512x512` | `512x512x512` | `11.76 GOPS` | `22.82 ms` | `0.03 GOPS` | `10633.82 ms` | `466.02x` |
 | `1x784x128` | `32x800x128` | `11.22 GOPS` | `0.58 ms` | `0.06 GOPS` | `113.54 ms` | `194.35x` |
 | `16x1024x128` | `32x1024x128` | `11.73 GOPS` | `0.72 ms` | `0.05 GOPS` | `175.09 ms` | `244.77x` |
+
+## Charts
+
+Throughput comparison and speedup trend derived from the benchmark table.
+
+Generated with `scripts/generate_benchmark_charts.py`.
+
+![FPGA vs PS throughput chart](images/benchmark_throughput.png)
+
+![Speedup chart](images/benchmark_speedup.png)
