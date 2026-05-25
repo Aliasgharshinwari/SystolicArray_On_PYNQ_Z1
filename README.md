@@ -12,6 +12,10 @@ The included HLS testbench checks the hardware result against a software referen
 
 ![Hardware block diagram](images/hardware_block_diagram.png)
 
+## Architecture Overview
+
+![Architectural overview](images/architectural_overview.png)
+
 ## Repository Layout
 
 - `hls_project/` — HLS source, headers, and testbench files.
