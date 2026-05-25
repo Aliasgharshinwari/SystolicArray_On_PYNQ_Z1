@@ -1,0 +1,37 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Sun May 24 11:22:36 2026
+| Host         : ali running 64-bit Ubuntu 22.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_pipelined_layer_proc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_pipelined_layer_proc_0_0 (xilinx.com:hls:pipelined_layer_processor:1.0) from (Rev. 2114622767) to (Rev. 2114622796)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Sun May 24 10:57:27 2026
+| Host         : ali running 64-bit Ubuntu 22.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_pipelined_layer_proc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_pipelined_layer_proc_0_0 (xilinx.com:hls:pipelined_layer_processor:1.0) from (Rev. 2114622690) to (Rev. 2114622767)
+

@@ -1,0 +1,76 @@
+<pragmas>
+<pragma file="SystolicArray/main.cpp" line="11" pragmaType="inline" parentfunction="read_big_tile" off="1" region="0" recursive="0"/>
+<pragma file="SystolicArray/main.cpp" line="16" pragmaType="pipeline" parentfunction="read_big_tile" off="0" ii="1" rewind="0" style=""/>
+<pragma file="SystolicArray/main.cpp" line="21" pragmaType="unroll" parentfunction="read_big_tile" factor="-1" skip_exit_check="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h" line="303" pragmaType="inline" parentfunction="ap_range_ref<256, false>::ap_range_ref(ap_int_base<256, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="1045" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<8>::ap_int<256, false>(ap_range_ref<256, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="357" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base<256, false>(ap_range_ref<256, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<256, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h" line="626" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="175" pragmaType="inline" parentfunction="ap_int_base<256, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="185" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base<16, true>(ap_int_base<16, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>& ap_int_base<32, true>::operator+=<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="SystolicArray/main.cpp" line="35" pragmaType="inline" parentfunction="compute_systolic" off="1" region="0" recursive="0"/>
+<pragma file="SystolicArray/main.cpp" line="52" pragmaType="pipeline" parentfunction="compute_systolic" off="0" ii="1" rewind="0" style=""/>
+<pragma file="SystolicArray/main.cpp" line="66" pragmaType="pipeline" parentfunction="compute_systolic" off="0" ii="1" rewind="0" style=""/>
+<pragma file="SystolicArray/main.cpp" line="89" pragmaType="pipeline" parentfunction="compute_systolic" off="0" ii="1" rewind="0" style=""/>
+<pragma file="SystolicArray/main.cpp" line="54" pragmaType="unroll" parentfunction="compute_systolic" factor="-1" skip_exit_check="0"/>
+<pragma file="SystolicArray/main.cpp" line="61" pragmaType="unroll" parentfunction="compute_systolic" factor="-1" skip_exit_check="0"/>
+<pragma file="SystolicArray/main.cpp" line="72" pragmaType="unroll" parentfunction="compute_systolic" factor="-1" skip_exit_check="0"/>
+<pragma file="SystolicArray/main.cpp" line="91" pragmaType="unroll" parentfunction="compute_systolic" factor="-1" skip_exit_check="0"/>
+<pragma file="SystolicArray/main.cpp" line="74" pragmaType="unroll" parentfunction="compute_systolic" factor="-1" skip_exit_check="0"/>
+<pragma file="SystolicArray/main.cpp" line="39" pragmaType="array_partition" parentfunction="compute_systolic" dim="0" factor="0" mode="complete" dynamic="0" variable="h_wires"/>
+<pragma file="SystolicArray/main.cpp" line="40" pragmaType="array_partition" parentfunction="compute_systolic" dim="0" factor="0" mode="complete" dynamic="0" variable="v_wires"/>
+<pragma file="SystolicArray/main.cpp" line="44" pragmaType="array_partition" parentfunction="compute_systolic" dim="0" factor="0" mode="complete" dynamic="0" variable="local_regs"/>
+<pragma file="SystolicArray/main.cpp" line="77" pragmaType="bind_op" parentfunction="compute_systolic" op="12" impl="3" latency="-1"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<8>::ap_int()" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="185" pragmaType="inline" parentfunction="ap_int_base<16, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="214" pragmaType="inline" parentfunction="ap_int_base<16, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<16>::ap_int<16, true>(ap_int_base<16, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<16, true>::ssdm_int(short)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="214" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h" line="0" pragmaType="inline" parentfunction="ap_range_ref<256, false>& ap_range_ref<256, false>::operator=<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="175" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="SystolicArray/main.cpp" line="107" pragmaType="inline" parentfunction="write_big_tile" off="1" region="0" recursive="0"/>
+<pragma file="SystolicArray/main.cpp" line="113" pragmaType="pipeline" parentfunction="write_big_tile" off="0" ii="1" rewind="0" style=""/>
+<pragma file="SystolicArray/main.cpp" line="117" pragmaType="unroll" parentfunction="write_big_tile" factor="-1" skip_exit_check="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<256>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="185" pragmaType="inline" parentfunction="ap_int_base<256, false>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi256ELb0EEC2EDq256_j" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="214" pragmaType="inline" parentfunction="ap_int_base<256, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="SystolicArray/main.cpp" line="172" pragmaType="pipeline" parentfunction="pipelined_layer_processor" off="0" ii="1" rewind="0" style=""/>
+<pragma file="SystolicArray/main.cpp" line="137" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="m_axi" port="mat_A" bundle="gmem0" offset="slave" name="" depth="4000" num_read_outstanding="4" num_write_outstanding="-1" max_burst_read_length="64" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="SystolicArray/main.cpp" line="138" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="m_axi" port="mat_B" bundle="gmem1" offset="slave" name="" depth="4000" num_read_outstanding="4" num_write_outstanding="-1" max_burst_read_length="64" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="SystolicArray/main.cpp" line="139" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="m_axi" port="mat_C" bundle="gmem0" offset="slave" name="" depth="4000" num_read_outstanding="-1" num_write_outstanding="4" max_burst_read_length="-1" max_burst_write_length="64" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="SystolicArray/main.cpp" line="140" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="SystolicArray/main.cpp" line="143" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="SystolicArray/main.cpp" line="144" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="s_axilite" port="num_row_tiles" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="SystolicArray/main.cpp" line="145" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="s_axilite" port="num_depth_tiles" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="SystolicArray/main.cpp" line="146" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="s_axilite" port="num_col_tiles" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="SystolicArray/main.cpp" line="149" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="s_axilite" port="mat_A" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="SystolicArray/main.cpp" line="150" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="s_axilite" port="mat_B" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="SystolicArray/main.cpp" line="151" pragmaType="interface" parentfunction="pipelined_layer_processor" mode="s_axilite" port="mat_C" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="SystolicArray/main.cpp" line="157" pragmaType="array_partition" parentfunction="pipelined_layer_processor" dim="1" factor="16" mode="cyclic" dynamic="0" variable="tile_A"/>
+<pragma file="SystolicArray/main.cpp" line="158" pragmaType="array_reshape" parentfunction="pipelined_layer_processor" dim="2" factor="32" mode="cyclic" variable="tile_A"/>
+<pragma file="SystolicArray/main.cpp" line="159" pragmaType="bind_storage" parentfunction="pipelined_layer_processor" op="666" impl="22" latency="-1" variable="tile_A"/>
+<pragma file="SystolicArray/main.cpp" line="161" pragmaType="array_reshape" parentfunction="pipelined_layer_processor" dim="2" factor="32" mode="cyclic" variable="tile_B"/>
+<pragma file="SystolicArray/main.cpp" line="162" pragmaType="bind_storage" parentfunction="pipelined_layer_processor" op="666" impl="22" latency="-1" variable="tile_B"/>
+<pragma file="SystolicArray/main.cpp" line="164" pragmaType="array_partition" parentfunction="pipelined_layer_processor" dim="2" factor="16" mode="cyclic" dynamic="0" variable="tile_C"/>
+<pragma file="SystolicArray/main.cpp" line="165" pragmaType="bind_storage" parentfunction="pipelined_layer_processor" op="666" impl="22" latency="-1" variable="tile_C"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="214" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<8>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="1494" pragmaType="inline" parentfunction="ap_int_base<8, true>::RType<8, true>::mult operator*<8, true, 8, true>(ap_int_base<8, true> const&, ap_int_base<8, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int<16>(ap_int<16> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int(signed char)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="175" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int()" off="0" region="0" recursive="0"/>
+</pragmas>

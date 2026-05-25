@@ -1,0 +1,84 @@
+remark: SystolicArray/main.cpp:173:20: Loop 'VITIS_LOOP_173_1' is marked as complete unroll implied by the pipeline pragma
+remark: SystolicArray/main.cpp:116:19: Loop 'Pack' is marked as complete unroll implied by the pipeline pragma
+remark: SystolicArray/main.cpp:53:18: Loop 'Load_Cache_Col' is marked as complete unroll implied by the pipeline pragma
+remark: SystolicArray/main.cpp:68:19: Loop 'VITIS_LOOP_68_3' is marked as complete unroll implied by the pipeline pragma
+remark: SystolicArray/main.cpp:69:34: Loop 'VITIS_LOOP_69_4' is marked as complete unroll implied by the pipeline pragma
+remark: SystolicArray/main.cpp:71:27: Loop 'Grid_Row' is marked as complete unroll implied by the pipeline pragma
+remark: SystolicArray/main.cpp:73:12: Loop 'Grid_Col' is marked as complete unroll implied by the pipeline pragma
+remark: SystolicArray/main.cpp:90:19: Loop 'Store_Cache_Col' is marked as complete unroll implied by the pipeline pragma
+remark: SystolicArray/main.cpp:20:17: Loop 'Unpack' is marked as complete unroll implied by the pipeline pragma
+remark: SystolicArray/main.cpp:135:0: Unrolling loop 'VITIS_LOOP_173_1' (SystolicArray/main.cpp:173:20) in function 'pipelined_layer_processor' completely with a factor of 32
+remark: SystolicArray/main.cpp:106:0: Unrolling loop 'Pack' (SystolicArray/main.cpp:116:19) in function 'write_big_tile' completely with a factor of 8
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Load_Cache_Col' (SystolicArray/main.cpp:53:18) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'VITIS_LOOP_60_2' (SystolicArray/main.cpp:60:71) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'VITIS_LOOP_68_3' (SystolicArray/main.cpp:68:19) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'VITIS_LOOP_69_4' (SystolicArray/main.cpp:69:34) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Row' (SystolicArray/main.cpp:71:27) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Grid_Col' (SystolicArray/main.cpp:73:12) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:34:0: Unrolling loop 'Store_Cache_Col' (SystolicArray/main.cpp:90:19) in function 'compute_systolic' completely with a factor of 32
+remark: SystolicArray/main.cpp:10:0: Unrolling loop 'Unpack' (SystolicArray/main.cpp:20:17) in function 'read_big_tile' completely with a factor of 32
+remark: SystolicArray/main.cpp:37:10: Applying array_partition to 'h_wires': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: SystolicArray/main.cpp:38:13: Applying array_partition to 'v_wires': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: SystolicArray/main.cpp:43:11: Applying array_partition to 'local_regs': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_partition to 'tile_A': Cyclic partitioning with factor 16 on dimension 1.
+remark: SystolicArray/main.cpp:155:14: Applying array_partition to 'tile_C': Cyclic partitioning with factor 16 on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_0': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_1': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_2': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_3': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_4': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_5': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_6': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_7': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_8': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_9': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_10': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_11': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_12': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_13': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_14': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:153:10: Applying array_reshape to 'tile_A_15': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:154:13: Applying array_reshape to 'tile_B': Complete reshaping on dimension 2.
+remark: SystolicArray/main.cpp:111:17: Sequential write of length 128 has been inferred _XLX_SEP_ OldID=for.inc.store.91,  _XLX_SEP_ scevgepseq dram_matrix gmem0 Write_Rows SystolicArray/main.cpp:111:17 write_big_tile(ap_int<32> (*) [32], ap_uint<256>*, int) 
+remark: SystolicArray/main.cpp:15:16: Sequential read of length 32 has been inferred _XLX_SEP_ OldID=for.inc.load.5,  _XLX_SEP_ scevgepseq dram_matrix gmem0,gmem1 Read_Loop SystolicArray/main.cpp:15:16 read_big_tile(ap_uint<256>*, ap_int<8> (*) [32], int) (.97.98) 
+remark: SystolicArray/main.cpp:15:16: Sequential read of length 32 has been inferred _XLX_SEP_ OldID=for.inc.load.5,  _XLX_SEP_ scevgepseq dram_matrix gmem0,gmem1 Read_Loop SystolicArray/main.cpp:15:16 read_big_tile(ap_uint<256>*, ap_int<8> (*) [32], int) 
+remark: SystolicArray/main.cpp:111:17: Could not widen since type i256 size is greater than or equal to the max_widen_bitwidth threshold of 0 _XLX_SEP_ scevgepseq dram_matrix gmem0 Write_Cols SystolicArray/main.cpp:112:21 write_big_tile(ap_int<32> (*) [32], ap_uint<256>*, int) 
+remark: SystolicArray/main.cpp:15:16: Could not widen since type i256 size is greater than or equal to the max_widen_bitwidth threshold of 0 _XLX_SEP_ scevgepseq dram_matrix gmem0,gmem1 Read_Loop SystolicArray/main.cpp:15:16 read_big_tile(ap_uint<256>*, ap_int<8> (*) [32], int) (.97.98) 
+remark: SystolicArray/main.cpp:15:16: Could not widen since type i256 size is greater than or equal to the max_widen_bitwidth threshold of 0 _XLX_SEP_ scevgepseq dram_matrix gmem0,gmem1 Read_Loop SystolicArray/main.cpp:15:16 read_big_tile(ap_uint<256>*, ap_int<8> (*) [32], int) 
+remark: SystolicArray/main.cpp:15:16: Multiple burst reads of length 32 and bit width 256 has been inferred. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. _XLX_SEP_ seq  gmem0 Read_Loop SystolicArray/main.cpp:15:16 read_big_tile(ap_uint<256>*, ap_int<8> (*) [32], int) (.97.98.1) 
+remark: SystolicArray/main.cpp:15:16: Multiple burst reads of length 32 and bit width 256 in loop 'Read_Loop'(SystolicArray/main.cpp:15:16) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+remark: SystolicArray/main.cpp:15:16: Multiple burst reads of length 32 and bit width 256 has been inferred. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. _XLX_SEP_ seq  gmem1 Read_Loop SystolicArray/main.cpp:15:16 read_big_tile(ap_uint<256>*, ap_int<8> (*) [32], int) (.1) 
+remark: SystolicArray/main.cpp:15:16: Multiple burst reads of length 32 and bit width 256 in loop 'Read_Loop'(SystolicArray/main.cpp:15:16) has been inferred on bundle 'gmem1'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+remark: SystolicArray/main.cpp:111:17: Multiple burst writes of length 128 and bit width 256 has been inferred. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. _XLX_SEP_ seq  gmem0 Write_Rows SystolicArray/main.cpp:111:17 write_big_tile(ap_int<32> (*) [32], ap_uint<256>*, int) (.1) 
+remark: SystolicArray/main.cpp:111:17: Multiple burst writes of length 128 and bit width 256 in loop 'Write_Rows'(SystolicArray/main.cpp:111:17) has been inferred on bundle 'gmem0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.

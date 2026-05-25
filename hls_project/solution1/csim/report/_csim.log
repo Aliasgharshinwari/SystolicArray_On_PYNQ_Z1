@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../main.cpp in debug mode
+   Generating csim.exe
+--------------------------------------------
+  Systolic Array Testbench (Block Layout)
+  Matrix Size: 32x64 * 64x32
+--------------------------------------------
+[1/5] Initializing Data...
+[2/5] Packing Data to Block Layout...
+[3/5] Running Hardware Kernel...
+[4/5] Unpacking Results...
+[5/5] Verifying...
+SUCCESS! Hardware matches Software.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

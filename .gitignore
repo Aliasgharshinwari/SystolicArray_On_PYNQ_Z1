@@ -1,0 +1,4 @@
+hls_project/solution1/impl/
+*.dcp
+*_sim_netlist.v
+*_sim_netlist.vhdl
