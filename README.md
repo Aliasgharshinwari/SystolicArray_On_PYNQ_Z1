@@ -76,7 +76,9 @@ No license file is currently included. Add one if you want to publish or share t
 
 Results from the systolic array vs. PS benchmarking suite:
 
-| Benchmark shape | Padded shape | FPGA throughput | FPGA latency | PS throughput | PS latency | Speedup |
+Latency is shown in milliseconds, throughput in GOPS, and higher values are better.
+
+| Problem Size | Padded Size | FPGA GOPS | FPGA ms | PS GOPS | PS ms | Speedup |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | `32x32x32` | `32x32x32` | `1.37 GOPS` | `0.05 ms` | `0.18 GOPS` | `0.36 ms` | `7.50x` |
 | `64x64x64` | `64x64x64` | `4.93 GOPS` | `0.11 ms` | `0.22 GOPS` | `2.43 ms` | `22.82x` |
