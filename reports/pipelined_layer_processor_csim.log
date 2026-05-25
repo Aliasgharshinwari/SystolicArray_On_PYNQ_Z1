@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Generating csim.exe
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: obj/tb_main.o: in function `main':
+/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/csim/build/../../../tb_main.cpp:127: undefined reference to `pipelined_layer_processor(ap_uint<64>*, ap_uint<64>*, ap_uint<64>*, int, int, int)'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:323: csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

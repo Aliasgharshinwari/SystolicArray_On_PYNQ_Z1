@@ -97,3 +97,12 @@ Generated with `scripts/generate_benchmark_charts.py`.
 ![FPGA vs PS throughput chart](images/benchmark_throughput.png)
 
 ![Speedup chart](images/benchmark_speedup.png)
+
+**Resources Report**
+
+- A summary of available HLS/build logs and guidance for generating resource reports is placed in `reports/RESOURCES_REPORT.md`.
+- Included files: `reports/vitis_hls_log_all.xml`, `reports/pipelined_layer_processor_csim.log`.
+
+- Added placed utilization report: `reports/design_1_wrapper_utilization_placed.rpt` (Vivado 2022.2) — contains device-level placed resource counts (LUTs, FFs, BRAMs, DSPs).
+
+If you run the HLS synthesis (`csynth_design`) successfully on your machine, the generated resource reports (e.g., `*_csynth.rpt`) will appear under `hls_project/solution1/syn/report/` and can be copied into `reports/` for archival.
