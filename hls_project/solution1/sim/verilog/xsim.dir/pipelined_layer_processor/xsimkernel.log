@@ -1,7 +1,0 @@
-Running: xsim.dir/pipelined_layer_processor/xsimk -simmode gui -wdb pipelined_layer_processor.wdb -simrunnum 0 -socket 38253
-Design successfully loaded
-Design Loading Memory Usage: 49352 KB (Peak: 49352 KB)
-Design Loading CPU Usage: 30 ms
-Simulation completed
-Simulation Memory Usage: 152912 KB (Peak: 188620 KB)
-Simulation CPU Usage: 810 ms

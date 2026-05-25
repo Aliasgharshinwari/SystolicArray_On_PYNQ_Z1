@@ -1,0 +1,54 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'ali' on host 'ali' (Linux_x86_64 version 6.8.0-60-generic) on Mon May 25 19:30:46 PKT 2026
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/ali/Desktop/SystolicArray_On_PYNQ_Z1'
+Sourcing Tcl script '/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: source /home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/csim.tcl
+INFO: [HLS 200-1510] Running: open_project hls_project 
+INFO: [HLS 200-10] Opening project '/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project'.
+INFO: [HLS 200-1510] Running: set_top pipelined_layer_processor 
+INFO: [HLS 200-1510] Running: add_files main.cpp 
+WARNING: [HLS 200-40] Cannot find design file 'main.cpp'
+INFO: [HLS 200-1510] Running: add_files hls_project/main.h 
+INFO: [HLS 200-10] Adding design file 'hls_project/main.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb hls_project/tb_main.cpp -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'hls_project/tb_main.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -flow=syn
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -flow syn -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: source ./hls_project/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name pipelined_layer_processor pipelined_layer_processor 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Running Dispatch Server on port: 38633
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Generating csim.exe
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: obj/tb_main.o: in function `main':
+/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/csim/build/../../../tb_main.cpp:127: undefined reference to `pipelined_layer_processor(ap_uint<64>*, ap_uint<64>*, ap_uint<64>*, int, int, int)'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:323: csim.exe] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.16 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.23 seconds; current allocated memory: 0.000 MB.
+4
+    while executing
+"source /home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/csim.tcl"
+    invoked from within
+"hls::main /home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 1.11 seconds. Total CPU system time: 0.19 seconds. Total elapsed time: 11.17 seconds; peak allocated memory: 213.934 MB.

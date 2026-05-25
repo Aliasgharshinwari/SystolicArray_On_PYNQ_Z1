@@ -59,7 +59,7 @@
         <value string="solution1"/>
     </name>
     <project>
-        <value string="SystolicArray"/>
+        <value string="hls_project"/>
     </project>
     <flowTarget value="vivado"/>
     <targetInfo>

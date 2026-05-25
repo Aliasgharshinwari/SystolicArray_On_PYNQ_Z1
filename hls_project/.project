@@ -29,47 +29,47 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/ali/Desktop/SystolicArray/.apc/.src</location>
+			<location>/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/ali/Desktop/SystolicArray/.apc/.tb</location>
+			<location>/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/ali/Desktop/SystolicArray/solution1/.tcls</location>
+			<location>/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/main.cpp</name>
 			<type>1</type>
-			<location>/home/ali/Desktop/SystolicArray/main.cpp</location>
+			<location>/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/main.cpp</location>
 		</link>
 		<link>
 			<name>source/main.h</name>
 			<type>1</type>
-			<location>/home/ali/Desktop/SystolicArray/main.h</location>
+			<location>/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/main.h</location>
 		</link>
 		<link>
 			<name>testbench/tb_main.cpp</name>
 			<type>1</type>
-			<location>/home/ali/Desktop/SystolicArray/tb_main.cpp</location>
+			<location>/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/tb_main.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/ali/Desktop/SystolicArray/solution1/solution1.directive</location>
+			<location>/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/ali/Desktop/SystolicArray/solution1/directives.tcl</location>
+			<location>/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/ali/Desktop/SystolicArray/solution1/script.tcl</location>
+			<location>/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -5,7 +5,7 @@
 
 // --- CONFIGURATION ---
 #define SA_SIZE 16        // Systolic Array Size (16x16 PEs)
-#define TILE 16           // Memory Tile Size (32x32 Data)
+#define TILE 32           // Memory Tile Size (32x32 Data)
 #define VECTOR_WIDTH 16   // 32 Bytes per packet (256-bit interface)
 #define OUTPUT_WIDTH 8    // 8 Integers per packet (256-bit interface)
 
@@ -17,8 +17,8 @@ typedef ap_int<8>    input_t;
 typedef ap_int<32>   output_t;
 
 // CRITICAL: 256-bit Vector types to match VECTOR_WIDTH=32
-typedef ap_uint<256> vec_t;
-typedef ap_uint<256> vec_out_t;
+typedef ap_uint<64> vec_t;
+typedef ap_uint<64> vec_out_t;
 
 // Top Level Function Prototype
 void pipelined_layer_processor(
