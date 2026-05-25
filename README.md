@@ -12,20 +12,6 @@ The included HLS testbench checks the hardware result against a software referen
 
 ![Vivado block design](images/vivado_block_design.png)
 
-## Benchmark Results
-
-Results from the systolic array vs. PS benchmarking suite:
-
-| Benchmark shape | Padded shape | FPGA throughput | FPGA latency | PS throughput | PS latency | Speedup |
-| --- | --- | ---: | ---: | ---: | ---: | ---: |
-| `32x32x32` | `32x32x32` | `1.37 GOPS` | `0.05 ms` | `0.18 GOPS` | `0.36 ms` | `7.50x` |
-| `64x64x64` | `64x64x64` | `4.93 GOPS` | `0.11 ms` | `0.22 GOPS` | `2.43 ms` | `22.82x` |
-| `128x128x128` | `128x128x128` | `8.15 GOPS` | `0.51 ms` | `0.08 GOPS` | `49.82 ms` | `96.86x` |
-| `256x256x256` | `256x256x256` | `10.65 GOPS` | `3.15 ms` | `0.06 GOPS` | `518.03 ms` | `164.47x` |
-| `512x512x512` | `512x512x512` | `11.76 GOPS` | `22.82 ms` | `0.03 GOPS` | `10633.82 ms` | `466.02x` |
-| `1x784x128` | `32x800x128` | `11.22 GOPS` | `0.58 ms` | `0.06 GOPS` | `113.54 ms` | `194.35x` |
-| `16x1024x128` | `32x1024x128` | `11.73 GOPS` | `0.72 ms` | `0.05 GOPS` | `175.09 ms` | `244.77x` |
-
 ## Repository Layout
 
 - `hls_project/` — HLS source, headers, and testbench files.
@@ -88,3 +74,17 @@ To build or simulate the project, you will need Xilinx tooling such as:
 ## License
 
 No license file is currently included. Add one if you want to publish or share the project publicly.
+
+## Benchmark Results
+
+Results from the systolic array vs. PS benchmarking suite:
+
+| Benchmark shape | Padded shape | FPGA throughput | FPGA latency | PS throughput | PS latency | Speedup |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| `32x32x32` | `32x32x32` | `1.37 GOPS` | `0.05 ms` | `0.18 GOPS` | `0.36 ms` | `7.50x` |
+| `64x64x64` | `64x64x64` | `4.93 GOPS` | `0.11 ms` | `0.22 GOPS` | `2.43 ms` | `22.82x` |
+| `128x128x128` | `128x128x128` | `8.15 GOPS` | `0.51 ms` | `0.08 GOPS` | `49.82 ms` | `96.86x` |
+| `256x256x256` | `256x256x256` | `10.65 GOPS` | `3.15 ms` | `0.06 GOPS` | `518.03 ms` | `164.47x` |
+| `512x512x512` | `512x512x512` | `11.76 GOPS` | `22.82 ms` | `0.03 GOPS` | `10633.82 ms` | `466.02x` |
+| `1x784x128` | `32x800x128` | `11.22 GOPS` | `0.58 ms` | `0.06 GOPS` | `113.54 ms` | `194.35x` |
+| `16x1024x128` | `32x1024x128` | `11.73 GOPS` | `0.72 ms` | `0.05 GOPS` | `175.09 ms` | `244.77x` |
