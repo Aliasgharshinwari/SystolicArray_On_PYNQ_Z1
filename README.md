@@ -1,31 +1,29 @@
 # Systolic Array on PYNQ-Z1
 
-An FPGA accelerator project for matrix multiplication on the Digilent PYNQ-Z1 board. The design combines a tiled HLS kernel, a Vivado block design, and a PYNQ notebook workflow for running the overlay from Python.
+An FPGA accelerator project for matrix multiplication on the Digilent PYNQ-Z1 board. The design combines a tiled HLS kernel and a PYNQ notebook workflow for running the overlay from Python.
 
 ## Overview
 
-The core accelerator is a systolic-array matrix multiply kernel implemented in Vivado HLS. It operates on packed 256-bit memory words, loads matrix tiles into on-chip buffers, computes partial products through a 16x16 systolic array, and writes the resulting output tile back to memory.
+The core accelerator is a systolic-array matrix multiply kernel implemented in HLS. It operates on packed 256-bit memory words, loads matrix tiles into on-chip buffers, computes partial products through a 16x16 systolic array, and writes the resulting output tile back to memory.
 
 The included HLS testbench checks the hardware result against a software reference implementation and reports basic latency / throughput numbers.
 
-## Screenshot
+## Hardware Diagram
 
-![Vivado block design](images/vivado_block_design.png)
+![Hardware block diagram](images/hardware_block_diagram.png)
 
 ## Repository Layout
 
 - `hls_project/` — HLS source, headers, and testbench files.
-- `vivado_project/` — Vivado project, generated design artifacts, and bitstreams.
 - `pynq_notebooks/` — Jupyter notebook and PYNQ overlay files (`.bit`, `.hwh`, `.xclbin`).
 
 ## Getting Started
 
 If you want to work with the design quickly, start here:
 
-1. Open `hls_project/main.cpp`, `hls_project/main.h`, and `hls_project/tb_main.cpp` in Vitis HLS or Vivado HLS.
+1. Open `hls_project/main.cpp`, `hls_project/main.h`, and `hls_project/tb_main.cpp` in Vitis HLS or another HLS toolchain.
 2. Use the provided HLS script at `hls_project/solution1/script.tcl` if you prefer a scripted flow.
-3. Build or inspect the overlay from `vivado_project/SystolicArrayProj.xpr`.
-4. Open `pynq_notebooks/main.ipynb` to load `design_1.bit` and exercise the accelerator on PYNQ.
+3. Open `pynq_notebooks/main.ipynb` to load `design_1.bit` and exercise the accelerator on PYNQ.
 
 ## Main HLS Files
 
@@ -45,30 +43,25 @@ The testbench currently uses a `32 x 64` by `64 x 32` multiply case.
 
 ## Requirements
 
-To build or simulate the project, you will need Xilinx tooling such as:
+To build or simulate the project, you will need tooling such as:
 
-- Vivado HLS / Vitis HLS
-- Vivado Design Suite
+- An HLS toolchain
 - Python with Jupyter and the PYNQ libraries for notebook-based interaction
 
 ## Typical Workflow
 
 1. Open `hls_project/` in HLS and run C simulation using `tb_main.cpp`.
 2. Synthesize the kernel with `main.cpp` and `main.h`.
-3. Open the Vivado project in `vivado_project/SystolicArrayProj.xpr` and generate or reuse the overlay bitstream.
-4. Use `pynq_notebooks/main.ipynb` to load the overlay and drive the accelerator.
+3. Use `pynq_notebooks/main.ipynb` to load the overlay and drive the accelerator.
 
 ## Included Artifacts
 
 - `pynq_notebooks/design_1.bit` and `pynq_notebooks/design_1.hwh` — PYNQ overlay pair.
 - `pynq_notebooks/loaded.xclbin` — prebuilt overlay package.
-- `vivado_project/systolic.bit` and `vivado_project/systolic.hwh` — generated bitstream and hardware handoff files.
 - `hls_project/solution1/` — synthesized HLS solution outputs and reports.
 
 ## Notes
 
-- The repository includes generated Vivado artifacts and bitstreams so the design can be inspected without rebuilding everything from scratch.
-- Several paths inside generated Vivado files are absolute and may need regeneration if the project is moved to a different machine.
 - The notebook currently assumes the overlay file is named `design_1.bit`.
 
 ## License

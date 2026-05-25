@@ -24,7 +24,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--readme", default="README.md", help="Path to the repository README.")
     parser.add_argument(
         "--image",
-        default="images/vivado_block_design.png",
+        default="images/hardware_block_diagram.png",
         help="Path to the screenshot referenced from the README.",
     )
     return parser.parse_args()
@@ -49,15 +49,15 @@ def main() -> int:
     if readme_path.exists():
         readme_text = readme_path.read_text(encoding="utf-8")
 
-        require("## Screenshot" in readme_text, "README is missing the Screenshot section.", failures)
+        require("## Hardware Diagram" in readme_text, "README is missing the Hardware Diagram section.", failures)
         require(
             "## Benchmark Results" in readme_text,
             "README is missing the Benchmark Results section.",
             failures,
         )
         require(
-            "![Vivado block design](images/vivado_block_design.png)" in readme_text,
-            "README is missing the expected screenshot markdown.",
+            "![Hardware block diagram](images/hardware_block_diagram.png)" in readme_text,
+            "README is missing the expected hardware diagram markdown.",
             failures,
         )
 
