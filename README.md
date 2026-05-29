@@ -109,15 +109,17 @@ Generated with `scripts/generate_benchmark_charts.py`.
 
 If you run the HLS synthesis (`csynth_design`) successfully on your machine, the generated resource reports (e.g., `*_csynth.rpt`) will appear under `hls_project/solution1/syn/report/` and can be copied into `reports/` for archival.
 
-### Vitis HLS Resources Summary (Estimated)
+### Vivado Resources Summary (Placed)
 
-Device: `xc7z020clg400-1` — report: `hls_project/solution1/syn/report/pipelined_layer_processor_ws_csynth.rpt`
+Device: `xc7z020clg400-1` — Post-Implementation Placed Resources
 
 | Resource | Used | Available | Util% |
 | --- | ---: | ---: | ---: |
-| LUT | 16,774 | 53,200 | 31% |
-| FF | 12,296 | 106,400 | 11% |
-| BRAM (18K) | 28 | 280 | 10% |
-| DSP48E1 | 99 | 220 | 45% |
+| LUT | 32,792 | 53,200 | 61.64% |
+| LUTRAM | 4,667 | 17,400 | 26.82% |
+| FF | 30,040 | 106,400 | 28.23% |
+| BRAM (36K) | 32 | 140 | 22.86% |
+| DSP48E1 | 220 | 220 | 100.00% |
+| BUFG | 1 | 32 | 3.13% |
 
-Note: This table summarizes the Vitis HLS synthesis estimates for the newly optimized 16x16 `pipelined_layer_processor_ws` kernel. Placed utilization including the Zynq PS block will be slightly higher.
+Note: This table summarizes the final placed hardware utilization from Vivado, representing the complete PYNQ-Z1 overlay (including the 16x16 systolic array kernel, Zynq PS block, and AXI interconnects). As intended, the hardware uses exactly 100% of the available DSPs, seamlessly mapping the remaining required multipliers directly into the logic fabric (LUTs).
