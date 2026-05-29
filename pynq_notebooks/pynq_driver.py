@@ -94,25 +94,32 @@ def assign_reg(mmio, regs, name, value):
     else:
         raise RuntimeError(f"FATAL: Register '{name}' not found!")
 
-print("Configuring Registers...")
-assign_reg(systolic_ip, registers, 'mat_A', buf_A.physical_address)
-assign_reg(systolic_ip, registers, 'mat_B', buf_B.physical_address)
-assign_reg(systolic_ip, registers, 'mat_C', buf_C.physical_address)
+MAX_ROW_TILES = 16
 
-assign_reg(systolic_ip, registers, 'num_row_tiles', M // TILE)
-assign_reg(systolic_ip, registers, 'num_depth_tiles', K // TILE)
-assign_reg(systolic_ip, registers, 'num_col_tiles', N // TILE)
-
-print("Starting FPGA execution...")
+print("Configuring Registers and Starting FPGA Execution...")
 start_time = time.time()
 
-# Trigger ap_start (Bit 0)
-systolic_ip.write(0x00, 0x01)
+for row_tile_offset in range(0, M // TILE, MAX_ROW_TILES):
+    chunk_row_tiles = min(MAX_ROW_TILES, (M // TILE) - row_tile_offset)
+    
+    a_offset = row_tile_offset * TILE * K * 1 # 1 byte per input
+    c_offset = row_tile_offset * TILE * N * 4 # 4 bytes per output
+    
+    assign_reg(systolic_ip, registers, 'mat_A', buf_A.physical_address + a_offset)
+    assign_reg(systolic_ip, registers, 'mat_B', buf_B.physical_address)
+    assign_reg(systolic_ip, registers, 'mat_C', buf_C.physical_address + c_offset)
 
-# Wait for ap_done (Bit 1)
-while not (systolic_ip.read(0x00) & 0x02):
-    if time.time() - start_time > 5.0:
-        raise RuntimeError("TIMEOUT! FPGA is stuck.")
+    assign_reg(systolic_ip, registers, 'num_row_tiles', chunk_row_tiles)
+    assign_reg(systolic_ip, registers, 'num_depth_tiles', K // TILE)
+    assign_reg(systolic_ip, registers, 'num_col_tiles', N // TILE)
+
+    # Trigger ap_start (Bit 0)
+    systolic_ip.write(0x00, 0x01)
+
+    # Wait for ap_done (Bit 1)
+    while not (systolic_ip.read(0x00) & 0x02):
+        if time.time() - start_time > 10.0:
+            raise RuntimeError("TIMEOUT! FPGA is stuck.")
 
 hw_time = time.time() - start_time
 print(f"FPGA Execution Time: {hw_time * 1000:.4f} ms")

@@ -103,22 +103,26 @@ for shape in SHAPES_TO_TEST:
         buf_A.flush()
         buf_B.flush()
         
-        assign_reg(systolic_ip, registers, 'mat_A', buf_A.physical_address)
-        assign_reg(systolic_ip, registers, 'mat_B', buf_B.physical_address)
-        assign_reg(systolic_ip, registers, 'mat_C', buf_C.physical_address)
-        assign_reg(systolic_ip, registers, 'num_row_tiles', M // TILE)
-        assign_reg(systolic_ip, registers, 'num_depth_tiles', K // TILE)
-        assign_reg(systolic_ip, registers, 'num_col_tiles', N // TILE)
+        MAX_ROW_TILES = 16
         
-        # WARMUP
-        systolic_ip.write(0x00, 0x01)
-        while not (systolic_ip.read(0x00) & 0x02): pass
-            
         iterations = 10 if M*K*N > 1000000 else 50 # Scale iterations for large matrices
         start_time_fpga = time.time()
         for _ in range(iterations):
-            systolic_ip.write(0x00, 0x01)
-            while not (systolic_ip.read(0x00) & 0x02): pass
+            for row_tile_offset in range(0, M // TILE, MAX_ROW_TILES):
+                chunk_row_tiles = min(MAX_ROW_TILES, (M // TILE) - row_tile_offset)
+                
+                a_offset = row_tile_offset * TILE * K * 1 # 1 byte per input
+                c_offset = row_tile_offset * TILE * N * 4 # 4 bytes per output
+                
+                assign_reg(systolic_ip, registers, 'mat_A', buf_A.physical_address + a_offset)
+                assign_reg(systolic_ip, registers, 'mat_B', buf_B.physical_address)
+                assign_reg(systolic_ip, registers, 'mat_C', buf_C.physical_address + c_offset)
+                assign_reg(systolic_ip, registers, 'num_row_tiles', chunk_row_tiles)
+                assign_reg(systolic_ip, registers, 'num_depth_tiles', K // TILE)
+                assign_reg(systolic_ip, registers, 'num_col_tiles', N // TILE)
+                
+                systolic_ip.write(0x00, 0x01)
+                while not (systolic_ip.read(0x00) & 0x02): pass
         end_time_fpga = time.time()
         
         avg_time_fpga = (end_time_fpga - start_time_fpga) / iterations
