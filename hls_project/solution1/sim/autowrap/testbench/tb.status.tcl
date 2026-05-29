@@ -1,1 +1,1 @@
-set ::AESL_AUTOSIM::gTopFileName /home/ali/Desktop/SystolicArray/solution1/./sim/autowrap/testbench/main.cpp_pre.cpp.tb.cpp
+set ::AESL_AUTOSIM::gTopFileName /home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/./sim/autowrap/testbench/main.cpp_pre.cpp.tb.cpp

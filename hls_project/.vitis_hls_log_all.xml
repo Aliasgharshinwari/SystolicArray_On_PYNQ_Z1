@@ -2,32 +2,34 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <synLog>
-        <logs message="Error in linking the design.&#xA;    while executing&#xA;&quot;source /home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/csynth.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/csynth.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$newargs&quot;&#xA;    (procedure &quot;hls_proc&quot; line 16)&#xA;    invoked from within&#xA;&quot;hls_proc [info nameofexecutable] $argv&quot;" projectName="hls_project" solutionName="solution1" date="2026-05-25T19:29:04.662+0500"/>
-        <logs message="ERROR: [HLS 200-70] Cannot find any design unit to elaborate." projectName="hls_project" solutionName="solution1" date="2026-05-25T19:29:04.657+0500"/>
-      </synLog>
+      <synLog/>
       <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hls_project" solutionName="solution1" date="2026-05-25T19:30:57.312+0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hls_project" solutionName="solution1" date="2026-05-25T19:30:18.839+0500"/>
-      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [HLS 200-40] Cannot find source file main.cpp; skipping it." projectName="hls_project" solutionName="solution1" date="2026-05-25T19:29:04.652+0500" type="Warning"/>
-        <logs message="WARNING: [HLS 200-40] Cannot find design file 'main.cpp'" projectName="hls_project" solutionName="solution1" date="2026-05-25T19:28:54.134+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.362+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_BREADY' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.199+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWUSER' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.195+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWREGION' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.193+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWQOS' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.191+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWPROT' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.189+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWCACHE' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.187+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWLOCK' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.184+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWBURST' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.182+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWSIZE' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.179+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWLEN' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.177+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWID' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.175+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWADDR' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.173+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'write_big_tile_Pipeline_Write_Rows_Write_Cols/m_axi_gmem2_AWVALID' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:16.172+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_parent_loop_proc/m_axi_gmem0_BREADY' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:14.880+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_parent_loop_proc/m_axi_gmem0_WUSER' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:14.877+0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_parent_loop_proc/m_axi_gmem0_WID' to 0." projectName="hls_project" solutionName="solution1" date="2026-05-28T22:12:14.875+0500" type="Warning"/>
       </synLog>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog>
-        <logs message="WARNING: [HLS 200-40] Cannot find design file 'main.cpp'" projectName="hls_project" solutionName="solution1" date="2026-05-25T19:30:46.570+0500" type="Warning"/>
-        <logs message="WARNING: [HLS 200-40] Cannot find design file 'main.cpp'" projectName="hls_project" solutionName="solution1" date="2026-05-25T19:30:08.017+0500" type="Warning"/>
-      </csimLog>
+      <simLog>
+        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="hls_project" solutionName="solution1" date="2026-05-28T22:14:59.952+0500" type="Warning"/>
+      </simLog>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

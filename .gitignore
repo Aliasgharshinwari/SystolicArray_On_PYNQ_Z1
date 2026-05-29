@@ -2,3 +2,16 @@ hls_project/solution1/impl/
 *.dcp
 *_sim_netlist.v
 *_sim_netlist.vhdl
+
+# Ignore massive generated Vivado and HLS files
+hls_test_project/
+hls_project/solution1/.autopilot/
+hls_project/solution1/sim/
+hls_project/solution1/syn/
+hls_project/solution1/csim/
+hls_project/solution1/.debug/
+*.log
+*.jou
+*.wdb
+*.wcfg
+*.png

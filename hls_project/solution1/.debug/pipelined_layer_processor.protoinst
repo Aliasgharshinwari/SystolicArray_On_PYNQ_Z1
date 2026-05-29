@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_compute_systolic_fu_387/grp_compute_systolic_Pipeline_Load_Cache_Row_fu_8708/grp_compute_systolic_Pipeline_Load_Cache_Row_fu_8708_activity": {
+				"grp_compute_systolic_ws_fu_387/grp_compute_systolic_ws_Pipeline_Load_Weights_Row_fu_746/grp_compute_systolic_ws_Pipeline_Load_Weights_Row_fu_746_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -23,7 +23,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_compute_systolic_fu_387/grp_compute_systolic_Pipeline_Pulse_fu_9768/grp_compute_systolic_Pipeline_Pulse_fu_9768_activity": {
+				"grp_compute_systolic_ws_fu_387/grp_compute_systolic_ws_Pipeline_Pulse_fu_889/grp_compute_systolic_ws_Pipeline_Pulse_fu_889_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -33,17 +33,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_compute_systolic_fu_387/grp_compute_systolic_Pipeline_Store_Cache_Row_fu_11854/grp_compute_systolic_Pipeline_Store_Cache_Row_fu_11854_activity": {
-					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
-					"ports": {
-						"AP_CLK": { "actual": "ap_clk"},
-						"AP_DONE": { "actual": "ap_done"},
-						"AP_READY": { "actual": "ap_ready"},
-						"AP_RESET": { "actual": "ap_rst"},
-						"AP_START": { "actual": "ap_start"}
-					}
-				},
-				"grp_compute_systolic_fu_387/grp_compute_systolic_fu_387_activity": {
+				"grp_compute_systolic_ws_fu_387/grp_compute_systolic_ws_fu_387_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -63,7 +53,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_read_big_tile_1_fu_354/grp_read_big_tile_1_Pipeline_Read_Loop_fu_77/grp_read_big_tile_1_Pipeline_Read_Loop_fu_77_activity": {
+				"grp_read_big_tile_1_fu_354/grp_read_big_tile_1_Pipeline_Read_Cols_fu_112/grp_read_big_tile_1_Pipeline_Read_Cols_fu_112_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -83,7 +73,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_read_big_tile_fu_330/grp_read_big_tile_Pipeline_Read_Loop_fu_105/grp_read_big_tile_Pipeline_Read_Loop_fu_105_activity": {
+				"grp_read_big_tile_fu_330/grp_read_big_tile_Pipeline_Read_Rows_Read_Cols_fu_105/grp_read_big_tile_Pipeline_Read_Rows_Read_Cols_fu_105_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

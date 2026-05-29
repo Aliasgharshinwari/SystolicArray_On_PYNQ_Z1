@@ -6,14 +6,14 @@
 set script_dir [file dirname [file normalize [info script]]]
 set repo_root [file normalize [file join $script_dir ..]]
 set hls_dir [file join $repo_root hls_project]
-set project_dir [file join $script_dir hls_test_project]
+set project_dir "hls_test_project"
 
 puts "=== HLS Test Runner ==="
 puts "Repository root: $repo_root"
 puts "HLS sources: $hls_dir"
 
 open_project -reset $project_dir
-set_top pipelined_layer_processor
+set_top pipelined_layer_processor_ws
 
 add_files [file join $hls_dir main.cpp]
 add_files [file join $hls_dir main.h]

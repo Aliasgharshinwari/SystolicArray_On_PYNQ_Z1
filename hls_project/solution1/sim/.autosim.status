@@ -1,10 +1,10 @@
 set status(tv_done) 0
-set status(tvin) "pipelined_layer_processor.autotvin.dat"
+set status(tvin) "pipelined_layer_processor_ws.autotvin.dat"
 set status(wrapc_done) 1
 set status(bc_done) 0
 set status(bc_tb_done) 0
 set status(bc_tb_new_done) 0
-set status(tvout) "pipelined_layer_processor.autotvout.dat"
+set status(tvout) "pipelined_layer_processor_ws.autotvout.dat"
 set status(sc_done) 0
 set status(cas_done) 0
 set status(hdl_tvin) ""

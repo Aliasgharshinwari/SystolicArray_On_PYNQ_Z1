@@ -1,6 +1,7 @@
 set depth_list {
-  {gmem0 8000}
+  {gmem0 4000}
   {gmem1 4000}
+  {gmem2 4000}
   {mat_A 1}
   {mat_B 1}
   {mat_C 1}

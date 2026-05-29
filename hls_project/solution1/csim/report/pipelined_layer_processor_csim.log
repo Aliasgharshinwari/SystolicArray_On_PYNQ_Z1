@@ -1,9 +1,22 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../tb_main.cpp in debug mode
+   Compiling ../../../main.cpp in debug mode
    Generating csim.exe
-/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.37/bin/ld: obj/tb_main.o: in function `main':
-/home/ali/Desktop/SystolicArray_On_PYNQ_Z1/hls_project/solution1/csim/build/../../../tb_main.cpp:127: undefined reference to `pipelined_layer_processor(ap_uint<64>*, ap_uint<64>*, ap_uint<64>*, int, int, int)'
-collect2: error: ld returned 1 exit status
-make: *** [Makefile.rules:323: csim.exe] Error 1
-ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+--------------------------------------------
+  Systolic Array Testbench (Block Layout)
+  Matrix Size: 32x64 * 64x32
+--------------------------------------------
+[1/5] Initializing Data...
+[2/5] Packing Data to Block Layout...
+[3/5] Running Hardware Kernel...
+
+      --- PROFILING RESULTS ---
+      Latency:    0.005346 seconds
+      Throughput: 0.024517 GOPS (Giga-Operations/sec)
+
+[4/5] Unpacking Results...
+[5/5] Verifying...
+SUCCESS! Hardware matches Software.
+INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************
