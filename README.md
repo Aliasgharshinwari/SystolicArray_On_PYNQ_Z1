@@ -18,8 +18,9 @@ The included HLS testbench checks the hardware result against a software referen
 
 ## Repository Layout
 
-- `hls_project/` — HLS source, headers, and testbench files.
-- `pynq_notebooks/` — Jupyter notebook and PYNQ overlay files (`.bit`, `.hwh`, `.xclbin`).
+- `hls_project/` — HLS source, headers, and C++ testbench files.
+- `pynq_notebooks/` — Jupyter notebook, `.bit`/`.hwh` overlay files, and Python hardware drivers (`pynq_driver.py`, `pynq_benchmark.py`).
+- `scripts/` — Auxiliary scripts including `laptop_benchmark.py` for CPU baselines.
 
 ## Getting Started
 
@@ -37,11 +38,12 @@ If you want to work with the design quickly, start here:
 
 ## Kernel Notes
 
-- Systolic array size: `16 x 16`
+- Architecture: **Weight Stationary** Streaming Dataflow
+- Systolic array size: `16 x 16` (256 MACs, efficiently mixed on DSPs + Fabric LUTs)
 - Tile size: `16 x 16`
-- Input packing: `256-bit` AXI words via `vec_t`
-- Output packing: `256-bit` AXI words via `vec_out_t`
-- Top function: `pipelined_layer_processor`
+- Input packing: `256-bit` AXI bursts via `vec_t`
+- Output packing: `256-bit` AXI bursts via `vec_out_t`
+- Top function: `pipelined_layer_processor_ws`
 
 The testbench currently uses a `32 x 64` by `64 x 32` multiply case.
 
@@ -70,7 +72,7 @@ To build or simulate the project, you will need tooling such as:
 
 ## License
 
-No license file is currently included. Add one if you want to publish or share the project publicly.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Benchmark Results
 
